@@ -34,7 +34,12 @@ DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
 ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split(',') if os.getenv('ALLOWED_HOSTS') else []
 # Add Vercel domain automatically
 if os.getenv('VERCEL'):
-    ALLOWED_HOSTS.append(os.getenv('VERCEL_URL', ''))
+    vercel_url = os.getenv('VERCEL_URL', '')
+    if vercel_url:
+        ALLOWED_HOSTS.append(vercel_url)
+    # Also add preview and production URLs
+    if os.getenv('VERCEL_BRANCH_URL'):
+        ALLOWED_HOSTS.append(os.getenv('VERCEL_BRANCH_URL'))
 
 
 # Application definition
