@@ -42,6 +42,9 @@ A comprehensive healthcare chatbot application built with Django and Google's Ge
 ### Frontend
 - HTML5, CSS3, JavaScript
 - Django Templates
+  <img width="1918" height="1036" alt="login" src="https://github.com/user-attachments/assets/a4c14378-2ea7-4fd2-9c30-7d35dfae35b3" />
+<img width="1918" height="1077" alt="dashboard" src="https://github.com/user-attachments/assets/5667cb2a-dd4e-4f71-83b5-522b0ea25a1c" />
+
 
 ### AI/ML
 - **Google Gemini 2.5 Flash Lite** - Language model
